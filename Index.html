@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Federico Rosales | Desarrollador Web</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #0f172a, #020617); color: #f1f5f9; }
+
+    header {
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    h1 { font-size: 3em; font-weight: 700; }
+    header p { margin-top: 10px; color: #94a3b8; }
+
+    .btn {
+      margin-top: 20px;
+      display: inline-block;
+      padding: 12px 20px;
+      background: #38bdf8;
+      color: #020617;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    h2 { margin-bottom: 20px; font-size: 1.8em; }
+
+    .about, .skills, .contact {
+      background: rgba(30, 41, 59, 0.6);
+      padding: 30px;
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+    }
+
+    .skills p { margin: 10px 0; }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: rgba(30, 41, 59, 0.8);
+      padding: 20px;
+      border-radius: 15px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+
+    .card h3 { margin-bottom: 10px; }
+    .card p { color: #cbd5f5; }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #64748b;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Federico Rosales</h1>
+  <p>Desarrollador Web | Creando aplicaciones modernas y funcionales</p>
+  <a href="#proyectos" class="btn">Ver Proyectos</a>
+</header>
+
+<section>
+  <div class="about">
+    <h2>Sobre mí</h2>
+    <p>Soy un desarrollador en formación enfocado en crear soluciones reales y funcionales. Me especializo en desarrollo web y actualmente estoy ampliando mis conocimientos en desarrollo móvil con Flutter. Busco oportunidades para aplicar mis habilidades en proyectos reales.</p>
+  </div>
+</section>
+
+<section>
+  <div class="skills">
+    <h2>Habilidades</h2>
+    <p><strong>Frontend:</strong> HTML, CSS, JavaScript</p>
+    <p><strong>Herramientas:</strong> GitHub, Firebase, Hosting</p>
+    <p><strong>En aprendizaje:</strong> Flutter, Backend</p>
+  </div>
+</section>
+
+<section id="proyectos">
+  <h2>Proyectos</h2>
+  <div class="projects">
+
+    <div class="card">
+      <h3>Immobly</h3>
+      <p>Plataforma web para publicación y búsqueda de propiedades con filtros avanzados, login y geolocalización.</p>
+    </div>
+
+    <div class="card">
+      <h3>OtakuMatch</h3>
+      <p>Aplicación tipo Tinder para la comunidad otaku y gamer en desarrollo con Flutter.</p>
+    </div>
+
+    <div class="card">
+      <h3>App de Notas</h3>
+      <p>Aplicación para gestionar notas enfocada en lógica de programación y manejo de datos.</p>
+      <a class="btn" href="https://github.com/bonfede-2012-creator/mis-notas-rn" target="_blank">Ver en GitHub</a>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="contact">
+    <h2>Contacto</h2>
+    <p>Email: bonfede-2012@hotmail.com</p>
+    <p>GitHub: github.com/bonfede-2012-creator</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Federico Rosales</p>
+</footer>
+
+</body>
+</html>
