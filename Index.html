@@ -14,6 +14,15 @@
       padding: 80px 20px;
     }
 
+    .perfil {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+      border: 3px solid #38bdf8;
+    }
+
     h1 { font-size: 3em; font-weight: 700; }
     header p { margin-top: 10px; color: #94a3b8; }
 
@@ -36,14 +45,12 @@
 
     h2 { margin-bottom: 20px; font-size: 1.8em; }
 
-    .about, .skills, .contact {
+    .box {
       background: rgba(30, 41, 59, 0.6);
       padding: 30px;
       border-radius: 15px;
       backdrop-filter: blur(10px);
     }
-
-    .skills p { margin: 10px 0; }
 
     .projects {
       display: grid;
@@ -56,15 +63,18 @@
       padding: 20px;
       border-radius: 15px;
       transition: transform 0.3s, box-shadow 0.3s;
+      text-align: center;
+    }
+
+    .card img {
+      width: 80px;
+      margin-bottom: 10px;
     }
 
     .card:hover {
       transform: translateY(-5px);
       box-shadow: 0 10px 30px rgba(0,0,0,0.3);
     }
-
-    .card h3 { margin-bottom: 10px; }
-    .card p { color: #cbd5f5; }
 
     footer {
       text-align: center;
@@ -76,20 +86,21 @@
 <body>
 
 <header>
+  <img src="perfil.jpg" alt="Foto Federico" class="perfil">
   <h1>Federico Rosales</h1>
   <p>Desarrollador Web | Creando aplicaciones modernas y funcionales</p>
   <a href="#proyectos" class="btn">Ver Proyectos</a>
 </header>
 
 <section>
-  <div class="about">
+  <div class="box">
     <h2>Sobre mí</h2>
-    <p>Soy un desarrollador en formación enfocado en crear soluciones reales y funcionales. Me especializo en desarrollo web y actualmente estoy ampliando mis conocimientos en desarrollo móvil con Flutter. Busco oportunidades para aplicar mis habilidades en proyectos reales.</p>
+    <p>Soy un desarrollador en formación enfocado en crear soluciones reales y funcionales. Me especializo en desarrollo web y actualmente estoy ampliando mis conocimientos en desarrollo móvil con Flutter.</p>
   </div>
 </section>
 
 <section>
-  <div class="skills">
+  <div class="box">
     <h2>Habilidades</h2>
     <p><strong>Frontend:</strong> HTML, CSS, JavaScript</p>
     <p><strong>Herramientas:</strong> GitHub, Firebase, Hosting</p>
@@ -102,26 +113,29 @@
   <div class="projects">
 
     <div class="card">
+      <img src="https://img.icons8.com/color/96/home.png">
       <h3>Immobly</h3>
-      <p>Plataforma web para publicación y búsqueda de propiedades con filtros avanzados, login y geolocalización.</p>
+      <p>Plataforma web para propiedades con filtros y geolocalización.</p>
     </div>
 
     <div class="card">
+      <img src="https://img.icons8.com/color/96/controller.png">
       <h3>OtakuMatch</h3>
-      <p>Aplicación tipo Tinder para la comunidad otaku y gamer en desarrollo con Flutter.</p>
+      <p>App tipo Tinder para gamers y otakus.</p>
     </div>
 
     <div class="card">
+      <img src="https://img.icons8.com/color/96/note.png">
       <h3>App de Notas</h3>
-      <p>Aplicación para gestionar notas enfocada en lógica de programación y manejo de datos.</p>
-      <a class="btn" href="https://github.com/bonfede-2012-creator/mis-notas-rn" target="_blank">Ver en GitHub</a>
+      <p>Gestión de notas enfocada en lógica y datos.</p>
+      <a class="btn" href="https://github.com/bonfede-2012-creator/mis-notas-rn" target="_blank">Ver</a>
     </div>
 
   </div>
 </section>
 
 <section>
-  <div class="contact">
+  <div class="box">
     <h2>Contacto</h2>
     <p>Email: bonfede-2012@hotmail.com</p>
     <p>GitHub: github.com/bonfede-2012-creator</p>
@@ -134,3 +148,4 @@
 
 </body>
 </html>
+
